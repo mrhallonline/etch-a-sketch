@@ -1,11 +1,20 @@
+h1 {
+    text-align: center;
+}
+
 .grid-container {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(16, 30px);
     grid-template-rows: repeat(16, 30px);
+    margin: 25px auto;
 }
 
 .grid-item {
     border: solid 1px;
 
+}
+
+.onHover {
+    background-color: aqua;
 }
 
