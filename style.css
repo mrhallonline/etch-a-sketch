@@ -1,20 +1,31 @@
-h1 {
-    text-align: center;
+body {
+background-color:#92DCE5 ;
 }
 
-.grid-container {
+h1 {
+    text-align: center;
+    padding: 25px;
+    color: #7c7c7c;
+}
+
+#gridBox {
     display: grid;
-    grid-template-columns: repeat(16, 30px);
-    grid-template-rows: repeat(16, 30px);
-    margin: 25px auto;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    margin: 5px auto;
+    padding: 50px;
+    height: 600px;
+    width: 600px;
+    
 }
 
 .grid-item {
-    border: solid 1px;
+    background-color: #fff;
+    border: solid .5px;
 
 }
 
 .onHover {
-    background-color: aqua;
+    background-color: black;
 }
 
