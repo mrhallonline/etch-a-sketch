@@ -1,11 +1,29 @@
 body {
-background-color:#92DCE5 ;
+    background-color: #92DCE5;
+}
+
+button {
+    margin: 10px auto 10px 50px;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
 }
 
 h1 {
     text-align: center;
     padding: 25px;
     color: #7c7c7c;
+}
+
+input{
+width: 50px;
+}
+
+p {
+    padding: 5px;
+    display: inline-block;
 }
 
 #gridBox {
@@ -16,7 +34,7 @@ h1 {
     padding: 50px;
     height: 600px;
     width: 600px;
-    
+
 }
 
 .grid-item {
@@ -28,4 +46,3 @@ h1 {
 .onHover {
     background-color: black;
 }
-
