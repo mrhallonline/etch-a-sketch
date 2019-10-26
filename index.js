@@ -11,9 +11,17 @@ $("#clearCanvas").click(function () {
 });
 
 
+
+
+
 $(".canvasButton").click(function () {
 
-    canvasSize = $("#vertical").val();
-
+    var canvasSize = $("#vertical").val();
+    $("#gridBox").css("grid-template-columns:" ,"repeat(" + canvasSize + ", 1fr)");
+    
+    for (var i = 0; i < (canvasSize*canvasSize); i++) {
+        $("#gridBox").prepend('<div class="grid-item"></div>');
+    }
     alert(canvasSize);
+
 });
