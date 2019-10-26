@@ -1,10 +1,10 @@
+/** Global Selectors */
 body {
     background-color: #92DCE5;
 }
 
 button {
-    margin: 10px auto 10px 50px;
-    text-align: center;
+    margin: 10px 10px 10px;
 }
 
 form {
@@ -17,8 +17,8 @@ h1 {
     color: #7c7c7c;
 }
 
-input{
-width: 50px;
+input {
+    width: 200px;
 }
 
 p {
@@ -26,6 +26,13 @@ p {
     display: inline-block;
 }
 
+/* *Container Elements */
+/* .buttonElements {
+    /* width: 2000px; */
+/* } */ 
+
+
+/* *CSS Grid elements */
 #gridBox {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
