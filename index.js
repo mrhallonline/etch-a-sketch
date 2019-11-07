@@ -43,10 +43,10 @@ $(".canvasButton").click(function () {
     // $(".grid-item").hover(function () {
     //     $(this).addClass("onHover");
     // });
-    shaderColor()
+    randomColor()
 });
 
-function eraseColor(){
+function eraserColor(){
     $(".grid-item").hover(function(){
         $(this).css('background-color','#fff' );
     })
