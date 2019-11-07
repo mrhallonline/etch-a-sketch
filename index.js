@@ -3,6 +3,8 @@ for (var i = 1; i < 257; i++) {
     $("#gridBox").prepend('<div class="grid-item"></div>');
 }
 
+$(".canvasButton").css({'width':"150px", 'margin-left':'10px'});
+
 //hovering over a grid changes the color from white to black 
 $(".grid-item").hover(function () {
     $(this).addClass("onHover");
@@ -12,8 +14,11 @@ $(".grid-item").hover(function () {
 $("#clearCanvas").click(function () {
     location.reload(false);
 });
-
-
+//inputs are mirrored
+$("#vertical").on("input",function(){
+    let verticalValue = $("#vertical").val();
+    $("#horizontal").val(verticalValue);
+});
 //sets up new canvas with box sizes based on the number entered.
 $(".canvasButton").click(function () {
     //stores the number entered
@@ -38,8 +43,25 @@ $(".canvasButton").click(function () {
     // $(".grid-item").hover(function () {
     //     $(this).addClass("onHover");
     // });
-    randomColor()
+    shaderColor()
 });
+
+function eraseColor(){
+    $(".grid-item").hover(function(){
+        $(this).css('background-color','#fff' );
+    })
+}
+
+function shaderColor(){
+    var shade = 0;
+    $(".grid-item").hover(function(){
+        
+        $(this).css('background-color', 'rgba(0,0,0,'+shade+0.1+')');
+        // shade= shade+0.1;
+        // shade = 0;
+    })
+}
+
 
 function randomColor(){
     $(".grid-item").hover(function(){

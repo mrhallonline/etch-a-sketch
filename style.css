@@ -18,7 +18,7 @@ h1 {
 }
 
 input {
-    width: 200px;
+    width: 50px;
 }
 
 p {
@@ -26,8 +26,26 @@ p {
     display: inline-block;
 }
 
-/* *Container Elements */
+/**Brush elements*/
+.paintBrush {
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    margin: 10px 25px 0px ;
+}
 
+#eraserBrush{
+
+}
+
+#blackBrush{
+
+}
+
+#multiColoredBrush{
+
+    
+}
 
 
 /* *CSS Grid elements */
@@ -42,7 +60,7 @@ p {
 
 .grid-item {
     background-color: #fff;
-    border: solid 1px;
+    /* border: solid 1px; */
 }
 
 .onHover {
