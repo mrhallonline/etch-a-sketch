@@ -41,13 +41,11 @@ p {
     padding: 50px;
     height: 600px;
     width: 600px;
-
 }
 
 .grid-item {
     background-color: #fff;
     border: solid 1px;
-
 }
 
 .onHover {
