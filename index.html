@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,25 +18,28 @@
         <h1 class="titleHeader">Etch-A-Sketch</h1>
         <div class="col-8 container">
             <form class="" action="">
-                <input type="number" name="quantity" id="vertical" min="1" max="100"> <p>x</p>
+                <input type="number" name="quantity" id="vertical" min="1" max="100">
+                <p>x</p>
                 <input type="number" name="quantity" id="horizontal" min="1" max="100" disabled>
-                <input class="btn btn-dark canvasButton" type="" value="Resize Canvas">
+                <input class="btn btn-outline-warning canvasButton" type="" value="Resize Canvas">
             </form>
-            <button class="btn btn-danger " type="button" id="clearCanvas">Clear Canvas</button>
-          <button class="btn paintBrush" id="eraserBrush"></button>
-          <button class="btn paintBrush" id="blackBrush"></button>
-          <button class="btn paintBrush" id="shaderBrush"></button>
-          <button class="btn paintBrush" id="multiColoredBrush"></button>
+            <button class="btn btn-outline-light " type="button" id="clearCanvas">Clear Canvas</button>
+            <button class="btn btn-md paintBrush" type="button" id="eraserBrush"></button>
+            <p>Erase</p>
+            <button class="btn btn-md paintBrush" type="button" id="blackBrush"></button>
+            <p>Black</p>
+            <button class="btn btn-lmd paintBrush" type="button" id="multiColoredBrush"></button>
+            <p>Random</p>
 
 
         </div>
     </div>
-   
-    
-        <div class="grid-container" id="gridBox">
-            
-        </div>
-    
+
+
+    <div class="grid-container" id="gridBox">
+
+    </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

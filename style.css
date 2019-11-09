@@ -1,10 +1,13 @@
 /** Global Selectors */
 body {
-    background-color: #92DCE5;
+    background-color: #4b7bec;
+    font-family: 'Kaushan Script', cursive;
 }
 
 button {
-    margin: 10px 10px 10px;
+    margin: 0px 5px 0px;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 form {
@@ -12,27 +15,32 @@ form {
 }
 
 h1 {
+    font-size: 65px;
     text-align: center;
-    padding: 25px;
-    color: #7c7c7c;
+    padding: 50px 0 50px;
+    color: #e00e1a;
 }
 
 input {
     width: 50px;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    padding: 5px;
+    margin: 0px 5px 0px;
     display: inline-block;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 /**Brush elements*/
 .paintBrush {
     width:30px;
-    height:30px;
+    height:30px; 
     border-radius: 100%;
-    margin: 10px 15px 0px ;
+    margin: 0px 1px 0px ;
     border: solid 1px ;
+    border-color: #fff;
 }
 
 #eraserBrush{
@@ -40,16 +48,15 @@ p {
 }
 
 #blackBrush{
-    background-color: black;
+    background-color: #000000;
 }
 
-#shaderBrush{
-    background-color: black;
-}
+/* #shaderBrush{
+    background: linear-gradient(to bottom, #ffffff 0%, #003300 100%);
+} */
 
 #multiColoredBrush{
     background-image: url("images/mcolored2.PNG");
-    
 }
 
 
@@ -57,17 +64,17 @@ p {
 #gridBox {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    margin: 5px auto;
-    padding: 50px;
+    margin: 25px auto;
+    padding: 0px  ;
     height: 800px;
     width: 800px;
+    border: solid 50px;
+    border-color: #eb3b5a ;
+    border-radius: 15px;
 }
 
 .grid-item {
     background-color: #fff;
-    /* border: solid 1px; */
-}
-
-.onHover {
-    background-color: black;
+    border: solid 1px;
+    border-color: #4b7bec;
 }
