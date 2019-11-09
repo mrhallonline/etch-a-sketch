@@ -13,7 +13,11 @@ blackColor();
 
 //clears the grid back to original state
 $("#clearCanvas").click(function () {
-    location.reload(false);
+    $('#gridBox').addClass('gridBoxShake', true)
+    setTimeout(function() {
+        $('#gridBox').removeClass("gridBoxShake");
+        $('.grid-item').css("background-color","#fff");
+    }, 800);
 });
 //inputs are mirrored
 $("#vertical").on("input", function () {
@@ -92,3 +96,4 @@ function randomColor() {
         $(this).css('background-color', newColor);
     });
 };
+
