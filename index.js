@@ -32,9 +32,12 @@ $(".canvasButton").click(function () {
     //new grid based on canvasSize variable
     $(".grid-container").empty().css({
         'display': 'grid',
-        'margin': '5px auto',
+        'margin': '25px auto',
         'height': '800px',
+        'padding': '0px',
         'width': '800px',
+        'border': 'solid 50px  #eb3b5a',
+        'border-radius': '15px',
         'grid-template-columns': 'repeat(' + canvasSize + ', 1fr)',
         'grid-template-rows': 'repeat(' + canvasSize + ', 1fr)',
         
